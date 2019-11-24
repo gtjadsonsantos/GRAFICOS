@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+            height: 300px;
+
+        }
+        #container .list {
+            width: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        #container .list > li {
+            width: 500px;
+            height: 23px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.143);
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul class="list" >
+            <li>100 %</li>
+            <li>90 % </li>
+            <li>80 % </li>
+            <li>70 % </li>
+            <li>60 % </li>
+            <li>50 % </li>
+            <li>40 % </li>
+            <li>30 % </li>
+            <li>20 % </li>
+            <li>10 % </li>
+            <li>0 % </li>
+        </ul>
+        <canvas id="canvas" height="300" width="500"></canvas>
+        <ul class="list" id="list">
+        </ul>
+    </div>    
+    <script src="./index.js"></script>
+</body>
+</html>
